@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Global6/Memories of a Lost Autumn MP3.ogg" type="AudioStream" id=1]
+
+[node name="Global6" type="Node"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+volume_db = -16.802
+autoplay = true

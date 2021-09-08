@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/qWmyy5ywcSgcgspKfdus3AkSZuKPzhDaNQVSex4i.ogg-96e357e5fb612e279055f5bd01c4de6c.oggstr"
+
+[deps]
+
+source_file="res://Global6/qWmyy5ywcSgcgspKfdus3AkSZuKPzhDaNQVSex4i.ogg"
+dest_files=[ "res://.import/qWmyy5ywcSgcgspKfdus3AkSZuKPzhDaNQVSex4i.ogg-96e357e5fb612e279055f5bd01c4de6c.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

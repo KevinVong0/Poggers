@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/chase.wav-5c56e79807409ed032ec8d918fcf6659.sample"
+
+[deps]
+
+source_file="res://Global4/chase.wav"
+dest_files=[ "res://.import/chase.wav-5c56e79807409ed032ec8d918fcf6659.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

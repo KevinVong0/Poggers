@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Psychadelik_Pedestrian_-_12_-_Against_The_Grain_Phish_Funk_remix.ogg-5a9fa512627fe82401548ca7b0d6ae39.oggstr"
+
+[deps]
+
+source_file="res://Global4/Psychadelik_Pedestrian_-_12_-_Against_The_Grain_Phish_Funk_remix.ogg"
+dest_files=[ "res://.import/Psychadelik_Pedestrian_-_12_-_Against_The_Grain_Phish_Funk_remix.ogg-5a9fa512627fe82401548ca7b0d6ae39.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
