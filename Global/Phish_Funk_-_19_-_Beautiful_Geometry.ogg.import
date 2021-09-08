@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Phish_Funk_-_19_-_Beautiful_Geometry.ogg-75ac03e4cb111d3d171dfd094bef9a2b.oggstr"
+
+[deps]
+
+source_file="res://Global/Phish_Funk_-_19_-_Beautiful_Geometry.ogg"
+dest_files=[ "res://.import/Phish_Funk_-_19_-_Beautiful_Geometry.ogg-75ac03e4cb111d3d171dfd094bef9a2b.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

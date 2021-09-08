@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Global2/Psychadelik_Pedestrian_-_12_-_Against_The_Grain_Phish_Funk_remix.ogg" type="AudioStream" id=1]
+
+[node name="Global2" type="Node"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+volume_db = -12.117
+autoplay = true
