@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Frogger.gd" type="Script" id=2]
+
+[sub_resource type="StreamTexture" id=2]
+load_path = "res://.import/32 x 32 platform character_run_0.png-06cb08e0fc40a071caa64fec10f178c1.stex"
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 14.287, 20.1215 )
+
+[node name="Player" type="Sprite"]
+position = Vector2( -0.0906448, -0.0943718 )
+texture = SubResource( 2 )
+script = ExtResource( 2 )
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0.794594, -0.132434 )
+shape = SubResource( 1 )

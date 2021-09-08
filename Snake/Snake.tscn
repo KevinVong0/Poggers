@@ -1,0 +1,44 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Snake/snake spritesheet calciumtrice.png" type="Texture" id=1]
+[ext_resource path="res://Snake/Snake.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 27.0668, 22.6576 )
+
+[sub_resource type="Animation" id=2]
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 20, 21, 22, 23, 24, 25, 26, 27, 28, 29 ]
+}
+
+[node name="Snake" type="Area2D"]
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -6.01042, 40.6586 )
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -1.33514e-05, 1.71661e-05 )
+scale = Vector2( 3.62955, 3.91682 )
+texture = ExtResource( 1 )
+vframes = 5
+hframes = 10
+frame = 20
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Walk = SubResource( 2 )
+[connection signal="body_entered" from="." to="." method="_on_Snake_body_entered"]

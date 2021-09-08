@@ -1,0 +1,22 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Rain/rain_drops-02.png" type="Texture" id=1]
+[ext_resource path="res://Rain/rain_drops-01.png" type="Texture" id=2]
+[ext_resource path="res://Rain/rain_drops-03.png" type="Texture" id=3]
+[ext_resource path="res://Rain/rain_drops-04.png" type="Texture" id=4]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "Rain",
+"speed": 5.0
+} ]
+
+[node name="Rain" type="Area2D"]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "Rain"
+frame = 3
+playing = true

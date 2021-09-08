@@ -1,0 +1,64 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Frogger.gd" type="Script" id=1]
+[ext_resource path="res://32 x 32 platform character_run_0.png" type="Texture" id=2]
+[ext_resource path="res://32 x 32 platform character_run_2.png" type="Texture" id=3]
+[ext_resource path="res://32 x 32 platform character_run_5.png" type="Texture" id=4]
+[ext_resource path="res://32 x 32 platform character_run_3.png" type="Texture" id=5]
+[ext_resource path="res://32 x 32 platform character_run_1.png" type="Texture" id=6]
+[ext_resource path="res://32 x 32 platform character_run_4.png" type="Texture" id=7]
+[ext_resource path="res://SoundEffects/Fantozzi-SandR2.ogg" type="AudioStream" id=8]
+[ext_resource path="res://SoundEffects/Fantozzi-SandR3.ogg" type="AudioStream" id=9]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [  ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 6 ), ExtResource( 3 ), ExtResource( 5 ), ExtResource( 7 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "Run",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 0.355642, 0.536939 )
+
+[node name="Player" type="KinematicBody2D"]
+position = Vector2( 50.2635, -63.386 )
+scale = Vector2( -55.9646, 56.9397 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [ -207.92 ]
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0.939763, 1.00189 )
+scale = Vector2( 0.0256761, 0.032617 )
+frames = SubResource( 1 )
+animation = "Run"
+frame = 2
+flip_h = true
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0.908791, 1.09693 )
+shape = SubResource( 2 )
+
+[node name="SoundEffects" type="Node" parent="."]
+
+[node name="Left" type="AudioStreamPlayer2D" parent="SoundEffects"]
+position = Vector2( 0, -3.5 )
+stream = ExtResource( 8 )
+volume_db = -17.155
+
+[node name="Right" type="AudioStreamPlayer2D" parent="SoundEffects"]
+position = Vector2( 53.2635, -60.386 )
+rotation = 3.14159
+scale = Vector2( 55.9646, -56.9397 )
+stream = ExtResource( 9 )
+volume_db = -13.938
